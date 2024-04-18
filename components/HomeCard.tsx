@@ -5,10 +5,10 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 interface HomeCardProps {
-  className: String;
-  img: String;
-  title: String;
-  desc: String;
+  className: string;
+  img: string;
+  title: string;
+  desc: string;
   handleClick: () => void;
 }
 
@@ -22,7 +22,7 @@ const HomeCard = ({
   return (
     <div
       className={cn(
-        " px-4 py-6 flex flex-col justify-between w-full  xl:max-w-[270px] min-h-[260px] rounded-[14px] cursor-pointer",
+        " px-4 py-6 flex flex-col justify-between w-full  xl:max-w-[270px] min-h-[260px] rounded-[14px] cursor-pointer hover:scale-[1.01]",
         className
       )}
       onClick={handleClick}
